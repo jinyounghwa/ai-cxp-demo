@@ -2,6 +2,8 @@
 
 > **"대화 한 번으로 상담부터 구매까지 — 검증된 AI로 신뢰를 더하다"**
 
+**저장소**: https://github.com/jinyounghwa/ai-cxp-demo (private)
+
 CLAUDE.md / SKILL.md에 정의된 5대 모듈(챗봇·콜봇, CRM, 커머스, 인텐트 학습, RAG 환각검증)을
 End-to-End로 시연하는 웹 데모입니다. 외부 서버/DB 없이 **단일 React SPA**로 동작하며,
 백엔드 로직(인텐트 분류·RAG 파이프라인·환각검증·CRM/커머스 액션)은 TypeScript 모듈로 시뮬레이션합니다.
@@ -56,6 +58,12 @@ npx esbuild <(echo '...테스트코드...') --bundle --format=esm --platform=nod
 ```
 
 검증 항목: 인텐트 분류 정확도, E2E 주문 플로우, Activity 자동 적재, RAG 신뢰 판정, 함정 질문 안전거부, 30문항 환각률 0%.
+
+## 🎨 UI
+
+다크 테마 단일 톤(존/슬레이트 계열 뉴트럴 + 블루 프라이머리 + 오렌지 액센트 + 시맨틱 상태색)으로
+전 화면 일관성을 맞췄습니다. 본문 폰트는 한글/영문 가독성을 위해 Pretendard Variable을 사용하고,
+디스플레이 타이틀(브랜드명·페이지 제목)만 Outfit을 씁니다.
 
 ## 📌 데모 범위 (CLAUDE.md 스코프 준수)
 - 실결제/실통화 연동 ❌ (Mock) · 실제 개인정보 ❌ (더미)
